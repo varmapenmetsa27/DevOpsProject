@@ -1,11 +1,11 @@
-package com.devops.EngNoToWords;
+package com.devops.IntToWords;
 
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 import java.text.DecimalFormat;
 
-public class EnglishNumberToWords {
+public class IntegerToWords {
 
     private static final String[] tensNames = {
         "",
@@ -43,7 +43,7 @@ public class EnglishNumberToWords {
         " nineteen"
     };
 
-    private EnglishNumberToWords() {}
+    private IntegerToWords() {}
 
     private static String convertLessThanOneThousand(int number) {
         String soFar;
@@ -156,7 +156,7 @@ public class EnglishNumberToWords {
                     System.out.println("===============================================");
                     break;
                 } else {
-                    System.out.println("\nYour Entered number is : " + EnglishNumberToWords.convert(input).toUpperCase());
+                    System.out.println("\nYour Entered number is : " + IntegerToWords.convert(input).toUpperCase());
                 }
 
             } catch (InputMismatchException | NumberFormatException ex) {
